@@ -1,0 +1,7 @@
+verilog work "rf_D.v"
+verilog work "npc_D.v"
+verilog work "Forward_mux_D.v"
+verilog work "ext_D.v"
+verilog work "Crtl.v"
+verilog work "cmp_D.v"
+verilog work "D_unit.v"

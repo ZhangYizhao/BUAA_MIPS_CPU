@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"E:/CO_cpu/P7/pc_F.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"E:/CO_cpu/P7/md_E.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"E:/CO_cpu/P7/Forward_mux_E.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"E:/CO_cpu/P7/Forward_mux_D.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"E:/CO_cpu/P7/exc_M.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"E:/CO_cpu/P7/exc_E.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"E:/CO_cpu/P7/Crtl.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"E:/CO_cpu/P7/cmp_D.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"E:/CO_cpu/P7/alu_E.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"E:/CO_cpu/P7/W_unit.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"E:/CO_cpu/P7/M_unit.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"E:/CO_cpu/P7/F_unit.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"E:/CO_cpu/P7/E_unit.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"E:/CO_cpu/P7/Exception.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="327" delta="unknown" >"E:/CO_cpu/P7/Exception.v" Line 72: Concatenation with unsized literal; will interpret as 32 bits
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="327" delta="unknown" >"E:/CO_cpu/P7/Exception.v" Line 73: Concatenation with unsized literal; will interpret as 32 bits
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="327" delta="unknown" >"E:/CO_cpu/P7/Exception.v" Line 74: Concatenation with unsized literal; will interpret as 32 bits
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="327" delta="unknown" >"E:/CO_cpu/P7/Exception.v" Line 75: Concatenation with unsized literal; will interpret as 32 bits
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="327" delta="unknown" >"E:/CO_cpu/P7/Exception.v" Line 118: Concatenation with unsized literal; will interpret as 32 bits
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"E:/CO_cpu/P7/D_unit.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"E:/CO_cpu/P7/ATdecoder.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"E:/CO_cpu/P7/Hazard_unit.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="327" delta="unknown" >"E:/CO_cpu/P7/Hazard_unit.v" Line 60: Concatenation with unsized literal; will interpret as 32 bits
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"E:/CO_cpu/P7/datapath.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="327" delta="unknown" >"E:/CO_cpu/P7/datapath.v" Line 53: Concatenation with unsized literal; will interpret as 32 bits
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"E:/CO_cpu/P7/cpu.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"E:/CO_cpu/P7/cpu_test.v" Line 32: Port <arg fmt="%s" index="1">PrRD</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="327" delta="unknown" >"E:/CO_cpu/P7/datapath.v" Line 53: Concatenation with unsized literal; will interpret as 32 bits
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"E:/CO_cpu/P7/datapath.v" Line 171: Port <arg fmt="%s" index="1">RTW</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="327" delta="unknown" >"E:/CO_cpu/P7/Exception.v" Line 72: Concatenation with unsized literal; will interpret as 32 bits
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="327" delta="unknown" >"E:/CO_cpu/P7/Exception.v" Line 73: Concatenation with unsized literal; will interpret as 32 bits
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="327" delta="unknown" >"E:/CO_cpu/P7/Exception.v" Line 74: Concatenation with unsized literal; will interpret as 32 bits
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="327" delta="unknown" >"E:/CO_cpu/P7/Exception.v" Line 75: Concatenation with unsized literal; will interpret as 32 bits
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"E:/CO_cpu/P7/Exception.v" Line 133: Port <arg fmt="%s" index="1">MemtoReg</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"E:/CO_cpu/P7/D_unit.v" Line 60: Port <arg fmt="%s" index="1">MemtoReg</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"E:/CO_cpu/P7/E_unit.v" Line 88: Port <arg fmt="%s" index="1">MemtoReg</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"E:/CO_cpu/P7/M_unit.v" Line 63: Port <arg fmt="%s" index="1">MemtoReg</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"E:/CO_cpu/P7/W_unit.v" Line 36: Port <arg fmt="%s" index="1">MemWrite</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="327" delta="unknown" >"E:/CO_cpu/P7/Hazard_unit.v" Line 60: Concatenation with unsized literal; will interpret as 32 bits
+</msg>
+
+</messages>
+

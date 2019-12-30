@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"E:/CO_cpu/P6/pc_F.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"E:/CO_cpu/P6/md_E.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"E:/CO_cpu/P6/Forward_mux_E.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"E:/CO_cpu/P6/Forward_mux_D.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"E:/CO_cpu/P6/Crtl.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"E:/CO_cpu/P6/cmp_D.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"E:/CO_cpu/P6/alu_E.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"E:/CO_cpu/P6/W_unit.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"E:/CO_cpu/P6/M_unit.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"E:/CO_cpu/P6/F_unit.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"E:/CO_cpu/P6/E_unit.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"E:/CO_cpu/P6/D_unit.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"E:/CO_cpu/P6/ATdecoder.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"E:/CO_cpu/P6/Hazard_unit.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"E:/CO_cpu/P6/datapath.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"E:/CO_cpu/P6/mips.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"E:/CO_cpu/P6/D_unit.v" Line 54: Port <arg fmt="%s" index="1">MemtoReg</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"E:/CO_cpu/P6/E_unit.v" Line 84: Port <arg fmt="%s" index="1">MemtoReg</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"E:/CO_cpu/P6/M_unit.v" Line 55: Port <arg fmt="%s" index="1">MemtoReg</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"E:/CO_cpu/P6/W_unit.v" Line 37: Port <arg fmt="%s" index="1">MemWrite</arg> is not connected to this instance
+</msg>
+
+</messages>
+

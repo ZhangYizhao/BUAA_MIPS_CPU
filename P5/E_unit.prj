@@ -1,0 +1,4 @@
+verilog work "Forward_mux_E.v"
+verilog work "Crtl.v"
+verilog work "alu_E.v"
+verilog work "E_unit.v"

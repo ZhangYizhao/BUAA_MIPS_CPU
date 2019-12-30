@@ -1,0 +1,441 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: DM.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "DM.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "DM"
+Output Format                      : NGC
+Target Device                      : xc3s50-5-pq208
+
+---- Source Options
+Top Module Name                    : DM
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "DM.v" in library work
+Module <DM> compiled
+No errors in compilation
+Analysis of file <"DM.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <DM> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <DM>.
+WARNING:Xst:2323 - "DM.v" line 67: Parameter 2 is not constant in call of system task $display.
+WARNING:Xst:2323 - "DM.v" line 67: Parameter 3 is not constant in call of system task $display.
+WARNING:Xst:2323 - "DM.v" line 67: Parameter 4 is not constant in call of system task $display.
+"DM.v" line 67: $display : @%h: *%h <= %h
+Module <DM> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <i> in unit <DM> has a constant value of 10000000000 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <DM>.
+    Related source file is "DM.v".
+WARNING:Xst:647 - Input <Addr<31:12>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <InsAddr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit 1024-to-1 multiplexer for signal <$varindex0000> created at line 34.
+    Found 32768-bit register for signal <DM>.
+INFO:Xst:738 - HDL ADVISOR - 32768 flip-flops were inferred for signal <DM>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred 32768 D-type flip-flop(s).
+	inferred  32 Multiplexer(s).
+Unit <DM> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 1024
+ 32-bit register                                       : 1024
+# Multiplexers                                         : 1
+ 32-bit 1024-to-1 multiplexer                          : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 32768
+ Flip-Flops                                            : 32768
+# Multiplexers                                         : 1
+ 32-bit 1024-to-1 multiplexer                          : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <DM> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block DM, actual ratio is 3554.
+Optimizing block <DM> to meet ratio 100 (+ 5) of 768 slices :
+WARNING:Xst:2254 - Area constraint could not be met for block <DM>, final ratio is 3554.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 32768
+ Flip-Flops                                            : 32768
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : DM.ngr
+Top Level Output File Name         : DM
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 134
+
+Cell Usage :
+# BELS                             : 34509
+#      BUF                         : 146
+#      GND                         : 1
+#      LUT2                        : 137
+#      LUT3                        : 17186
+#      LUT4                        : 1176
+#      MUXF5                       : 8471
+#      MUXF6                       : 4224
+#      MUXF7                       : 2112
+#      MUXF8                       : 1056
+# FlipFlops/Latches                : 32768
+#      FDRE                        : 32768
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 81
+#      IBUF                        : 49
+#      OBUF                        : 32
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50pq208-5 
+
+ Number of Slices:                    27310  out of    768   3555% (*) 
+ Number of Slice Flip Flops:          32768  out of   1536   2133% (*) 
+ Number of 4 input LUTs:              18499  out of   1536   1204% (*) 
+ Number of IOs:                         134
+ Number of bonded IOBs:                  82  out of    124    66%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 32768 |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 13.849ns (Maximum Frequency: 72.209MHz)
+   Minimum input arrival time before clock: 21.544ns
+   Maximum output required time after clock: 14.854ns
+   Maximum combinational path delay: 22.549ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 13.849ns (frequency: 72.209MHz)
+  Total number of paths / destination ports: 33554432 / 32768
+-------------------------------------------------------------------------
+Delay:               13.849ns (Levels of Logic = 12)
+  Source:            DM_0_24 (FF)
+  Destination:       DM_3_24 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: DM_0_24 to DM_3_24
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             1   0.626   0.851  DM_0_24 (DM_0_24)
+     LUT3:I1->O            1   0.479   0.000  Mmux__varindex0000_21148 (Mmux__varindex0000_21148)
+     MUXF5:I0->O           1   0.314   0.000  Mmux__varindex0000_19_f5_131 (Mmux__varindex0000_19_f5132)
+     MUXF6:I0->O           1   0.298   0.000  Mmux__varindex0000_17_f6_115 (Mmux__varindex0000_17_f6116)
+     MUXF7:I0->O           1   0.298   0.000  Mmux__varindex0000_15_f7_99 (Mmux__varindex0000_15_f7100)
+     MUXF8:I0->O           1   0.298   0.851  Mmux__varindex0000_13_f8_83 (Mmux__varindex0000_13_f884)
+     LUT3:I1->O            1   0.479   0.000  Mmux__varindex0000_1016 (Mmux__varindex0000_1016)
+     MUXF5:I0->O           1   0.314   0.000  Mmux__varindex0000_8_f5_15 (Mmux__varindex0000_8_f516)
+     MUXF6:I0->O           1   0.298   0.000  Mmux__varindex0000_6_f6_15 (Mmux__varindex0000_6_f616)
+     MUXF7:I0->O           1   0.298   0.000  Mmux__varindex0000_4_f7_15 (Mmux__varindex0000_4_f716)
+     MUXF8:I0->O           5   0.298   0.783  Mmux__varindex0000_2_f8_15 (_varindex0000<24>)
+     MUXF5:S->O          342   0.540   3.085  wdata<24>20 (wdata<24>)
+     BUF:I->O            342   0.479   3.085  wdata<24>20_1 (wdata<24>20_1)
+     FDRE:D                    0.176          DM_9_24
+    ----------------------------------------
+    Total                     13.849ns (5.195ns logic, 8.654ns route)
+                                       (37.5% logic, 62.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 34856960 / 98304
+-------------------------------------------------------------------------
+Offset:              21.544ns (Levels of Logic = 14)
+  Source:            Addr<2> (PAD)
+  Destination:       DM_3_24 (FF)
+  Destination Clock: clk rising
+
+  Data Path: Addr<2> to DM_3_24
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           497   0.715   3.839  Addr_2_IBUF (Addr_2_IBUF)
+     BUF:I->O            498   0.479   4.139  Addr_2_IBUF_14 (Addr_2_IBUF_14)
+     LUT3:I0->O            1   0.479   0.000  Mmux__varindex0000_182266 (Mmux__varindex0000_182266)
+     MUXF5:I1->O           1   0.314   0.000  Mmux__varindex0000_17_f5_1005 (Mmux__varindex0000_17_f51006)
+     MUXF6:I1->O           1   0.298   0.000  Mmux__varindex0000_16_f6_375 (Mmux__varindex0000_16_f6376)
+     MUXF7:I1->O           1   0.298   0.000  Mmux__varindex0000_15_f7_105 (Mmux__varindex0000_15_f7106)
+     MUXF8:I0->O           1   0.298   0.851  Mmux__varindex0000_13_f8_88 (Mmux__varindex0000_13_f889)
+     LUT3:I1->O            1   0.479   0.000  Mmux__varindex0000_1017 (Mmux__varindex0000_1017)
+     MUXF5:I0->O           1   0.314   0.000  Mmux__varindex0000_8_f5_16 (Mmux__varindex0000_8_f517)
+     MUXF6:I0->O           1   0.298   0.000  Mmux__varindex0000_6_f6_16 (Mmux__varindex0000_6_f617)
+     MUXF7:I0->O           1   0.298   0.000  Mmux__varindex0000_4_f7_16 (Mmux__varindex0000_4_f717)
+     MUXF8:I0->O           5   0.298   0.783  Mmux__varindex0000_2_f8_16 (_varindex0000<25>)
+     MUXF5:S->O          342   0.540   3.085  wdata<25>20 (wdata<25>)
+     BUF:I->O            342   0.479   3.085  wdata<25>20_1 (wdata<25>20_1)
+     FDRE:D                    0.176          DM_9_25
+    ----------------------------------------
+    Total                     21.544ns (5.763ns logic, 15.781ns route)
+                                       (26.7% logic, 73.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 106496 / 32
+-------------------------------------------------------------------------
+Offset:              14.854ns (Levels of Logic = 14)
+  Source:            DM_0_0 (FF)
+  Destination:       RD<15> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: DM_0_0 to RD<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             1   0.626   0.851  DM_0_0 (DM_0_0)
+     LUT3:I1->O            1   0.479   0.000  Mmux__varindex0000_214 (Mmux__varindex0000_214)
+     MUXF5:I0->O           1   0.314   0.000  Mmux__varindex0000_19_f5_3 (Mmux__varindex0000_19_f54)
+     MUXF6:I0->O           1   0.298   0.000  Mmux__varindex0000_17_f6_3 (Mmux__varindex0000_17_f64)
+     MUXF7:I0->O           1   0.298   0.000  Mmux__varindex0000_15_f7_3 (Mmux__varindex0000_15_f74)
+     MUXF8:I0->O           1   0.298   0.851  Mmux__varindex0000_13_f8_3 (Mmux__varindex0000_13_f84)
+     LUT3:I1->O            1   0.479   0.000  Mmux__varindex0000_10 (Mmux__varindex0000_10)
+     MUXF5:I0->O           1   0.314   0.000  Mmux__varindex0000_8_f5 (Mmux__varindex0000_8_f5)
+     MUXF6:I0->O           1   0.298   0.000  Mmux__varindex0000_6_f6 (Mmux__varindex0000_6_f6)
+     MUXF7:I0->O           1   0.298   0.000  Mmux__varindex0000_4_f7 (Mmux__varindex0000_4_f7)
+     MUXF8:I0->O          15   0.298   1.180  Mmux__varindex0000_2_f8 (_varindex0000<0>)
+     LUT4:I1->O           16   0.479   1.110  RD<10>31 (N13)
+     LUT3:I2->O            1   0.479   0.000  RD<9>2 (RD<9>2)
+     MUXF5:I0->O           1   0.314   0.681  RD<9>_f5 (RD_9_OBUF)
+     OBUF:I->O                 4.909          RD_9_OBUF (RD<9>)
+    ----------------------------------------
+    Total                     14.854ns (10.181ns logic, 4.673ns route)
+                                       (68.5% logic, 31.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 106800 / 32
+-------------------------------------------------------------------------
+Delay:               22.549ns (Levels of Logic = 16)
+  Source:            Addr<2> (PAD)
+  Destination:       RD<15> (PAD)
+
+  Data Path: Addr<2> to RD<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           497   0.715   3.839  Addr_2_IBUF (Addr_2_IBUF)
+     BUF:I->O            498   0.479   4.139  Addr_2_IBUF_10 (Addr_2_IBUF_10)
+     LUT3:I0->O            1   0.479   0.000  Mmux__varindex0000_1871 (Mmux__varindex0000_1871)
+     MUXF5:I0->O           1   0.314   0.000  Mmux__varindex0000_16_f5_44 (Mmux__varindex0000_16_f545)
+     MUXF6:I0->O           1   0.298   0.000  Mmux__varindex0000_14_f6_25 (Mmux__varindex0000_14_f626)
+     MUXF7:I0->O           1   0.298   0.000  Mmux__varindex0000_12_f7_12 (Mmux__varindex0000_12_f713)
+     MUXF8:I1->O           1   0.298   0.851  Mmux__varindex0000_11_f8_7 (Mmux__varindex0000_11_f88)
+     LUT3:I1->O            1   0.479   0.000  Mmux__varindex0000_84 (Mmux__varindex0000_84)
+     MUXF5:I1->O           1   0.314   0.000  Mmux__varindex0000_7_f5_0 (Mmux__varindex0000_7_f51)
+     MUXF6:I0->O           1   0.298   0.000  Mmux__varindex0000_5_f6_0 (Mmux__varindex0000_5_f61)
+     MUXF7:I1->O           1   0.298   0.000  Mmux__varindex0000_4_f7 (Mmux__varindex0000_4_f7)
+     MUXF8:I0->O          15   0.298   1.180  Mmux__varindex0000_2_f8 (_varindex0000<0>)
+     LUT4:I1->O           16   0.479   1.110  RD<10>31 (N13)
+     LUT3:I2->O            1   0.479   0.000  RD<9>2 (RD<9>2)
+     MUXF5:I0->O           1   0.314   0.681  RD<9>_f5 (RD_9_OBUF)
+     OBUF:I->O                 4.909          RD_9_OBUF (RD<9>)
+    ----------------------------------------
+    Total                     22.549ns (10.749ns logic, 11.800ns route)
+                                       (47.7% logic, 52.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 404.00 secs
+Total CPU time to Xst completion: 403.32 secs
+ 
+--> 
+
+Total memory usage is 5168744 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    7 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

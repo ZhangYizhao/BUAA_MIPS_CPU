@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompilers" num="299" delta="new" ><arg fmt="%s" index="1">&quot;Crtl.v&quot; line 81 </arg>Too many digits specified in binary constant
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="299" delta="new" ><arg fmt="%s" index="1">&quot;Crtl.v&quot; line 137 </arg>Too many digits specified in binary constant
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="299" delta="new" ><arg fmt="%s" index="1">&quot;Crtl.v&quot; line 164 </arg>Too many digits specified in binary constant
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="299" delta="new" ><arg fmt="%s" index="1">&quot;ATdecoder.v&quot; line 67 </arg>Too many digits specified in binary constant
+</msg>
+
+<msg type="warning" file="Xst" num="852" delta="new" >&quot;<arg fmt="%s" index="1">datapath.v</arg>&quot; line <arg fmt="%d" index="2">171</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">RTW</arg>&apos; of instance &apos;<arg fmt="%s" index="4">w_unit</arg>&apos; is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2725" delta="new" >&quot;<arg fmt="%s" index="1">Exception.v</arg>&quot; line <arg fmt="%d" index="2">119</arg>: Size mismatch between case item and case selector.
+</msg>
+
+<msg type="warning" file="Xst" num="2725" delta="new" >&quot;<arg fmt="%s" index="1">Exception.v</arg>&quot; line <arg fmt="%d" index="2">124</arg>: Size mismatch between case item and case selector.
+</msg>
+
+<msg type="warning" file="Xst" num="863" delta="new" >&quot;<arg fmt="%s" index="1">Crtl.v</arg>&quot; line <arg fmt="%d" index="2">22</arg>: Name conflict (<arg fmt="%s" index="3">&lt;instr&gt; and &lt;Instr&gt;, renaming instr as instr_rnm0</arg>).
+</msg>
+
+<msg type="info" file="Xst" num="2546" delta="new" >&quot;<arg fmt="%s" index="1">im_F.v</arg>&quot; line <arg fmt="%d" index="2">34</arg>: reading initialization file &quot;<arg fmt="%s" index="3">code.txt</arg>&quot;.
+</msg>
+
+<msg type="info" file="Xst" num="2546" delta="new" >&quot;<arg fmt="%s" index="1">im_F.v</arg>&quot; line <arg fmt="%d" index="2">35</arg>: reading initialization file &quot;<arg fmt="%s" index="3">code_handler.txt</arg>&quot;.
+</msg>
+
+<msg type="info" file="Xst" num="1607" delta="new" >Contents of array &lt;<arg fmt="%s" index="1">IM</arg>&gt; may be accessed with an index that does not cover the full array size.
+</msg>
+
+<msg type="warning" file="Xst" num="863" delta="new" >&quot;<arg fmt="%s" index="1">cmp_D.v</arg>&quot; line <arg fmt="%d" index="2">24</arg>: Name conflict (<arg fmt="%s" index="3">&lt;instr&gt; and &lt;Instr&gt;, renaming instr as instr_rnm0</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2321" delta="new" >&quot;<arg fmt="%s" index="1">rf_D.v</arg>&quot; line <arg fmt="%d" index="2">58</arg>: Parameter <arg fmt="%d" index="3">2</arg> (<arg fmt="%s" index="4">$time</arg>) is not supported in call of system task <arg fmt="%s" index="5">$display</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2323" delta="new" >&quot;<arg fmt="%s" index="1">rf_D.v</arg>&quot; line <arg fmt="%d" index="2">58</arg>: Parameter <arg fmt="%d" index="3">3</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2323" delta="new" >&quot;<arg fmt="%s" index="1">rf_D.v</arg>&quot; line <arg fmt="%d" index="2">58</arg>: Parameter <arg fmt="%d" index="3">4</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2323" delta="new" >&quot;<arg fmt="%s" index="1">rf_D.v</arg>&quot; line <arg fmt="%d" index="2">58</arg>: Parameter <arg fmt="%d" index="3">5</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="863" delta="new" >&quot;<arg fmt="%s" index="1">E_unit.v</arg>&quot; line <arg fmt="%d" index="2">46</arg>: Name conflict (<arg fmt="%s" index="3">&lt;start&gt; and &lt;Start&gt;, renaming start as start_rnm0</arg>).
+</msg>
+
+</messages>

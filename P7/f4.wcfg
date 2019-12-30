@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="E:/CO_cpu/P7/mips_test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="mips_test" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/mips_test/addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_test/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_test/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_test/interrupt" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">interrupt</obj_property>
+      <obj_property name="ObjectShortName">interrupt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_test/uut/cpu/dp_unit/exec_unit/EXLset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">EXLset</obj_property>
+      <obj_property name="ObjectShortName">EXLset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_test/uut/cpu/dp_unit/exec_unit/EXL_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">EXL_out</obj_property>
+      <obj_property name="ObjectShortName">EXL_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_test/uut/cpu/dp_unit/exec_unit/ExcCode_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ExcCode_in[6:2]</obj_property>
+      <obj_property name="ObjectShortName">ExcCode_in[6:2]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_test/uut/cpu/dp_unit/e_unit/IRE" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">IRE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IRE[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_test/uut/cpu/dp_unit/m_unit/IRM" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">IRM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IRM[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_test/uut/cpu/dp_unit/e_unit/alu_e/SrcA" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">SrcA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SrcA[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_test/uut/cpu/dp_unit/e_unit/alu_e/SrcB" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">SrcB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SrcB[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_test/uut/cpu/dp_unit/e_unit/alu_e/ALUop" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUop[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUop[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_test/uut/cpu/dp_unit/e_unit/alu_e/ov" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ov</obj_property>
+      <obj_property name="ObjectShortName">ov</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_test/uut/cpu/dp_unit/e_unit/ExcCode_M" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ExcCode_M[6:2]</obj_property>
+      <obj_property name="ObjectShortName">ExcCode_M[6:2]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_test/uut/cpu/dp_unit/e_unit/ExcCode_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ExcCode_in[6:2]</obj_property>
+      <obj_property name="ObjectShortName">ExcCode_in[6:2]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_test/uut/cpu/dp_unit/e_unit/exc_e/ov" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ov</obj_property>
+      <obj_property name="ObjectShortName">ov</obj_property>
+   </wvobject>
+</wave_config>

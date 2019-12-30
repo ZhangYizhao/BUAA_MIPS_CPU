@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "E:/CO_cpu/P4/M_unit.xst" -ofn "E:/CO_cpu/P4/M_unit.syr" 
+xst -intstyle ise -ifn "E:/CO_cpu/P4/M_unit.xst" -ofn "E:/CO_cpu/P4/M_unit.syr" 
+xst -intstyle ise -ifn "E:/CO_cpu/P4/M_unit.xst" -ofn "E:/CO_cpu/P4/M_unit.syr" 

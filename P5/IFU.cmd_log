@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/CO/ISE/P4/IFU.xst" -ofn "D:/CO/ISE/P4/IFU.syr" 
+xst -intstyle ise -ifn "D:/CO/ISE/P4/IFU.xst" -ofn "D:/CO/ISE/P4/IFU.syr" 

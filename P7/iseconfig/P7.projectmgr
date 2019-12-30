@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="P7" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/cpu E:|CO_cpu|P7|cpu.v/dp_unit - datapath/e_unit - E_unit</ClosedNode>
+         <ClosedNode>/cpu E:|CO_cpu|P7|cpu.v/dp_unit - datapath/f_unit - F_unit</ClosedNode>
+         <ClosedNode>/cpu E:|CO_cpu|P7|cpu.v/dp_unit - datapath/m_unit - M_unit</ClosedNode>
+         <ClosedNode>/cpu E:|CO_cpu|P7|mips.v/dp_unit - datapath</ClosedNode>
+         <ClosedNode>/cpu E:|CO_cpu|P7|mips.v/hz_unit - Hazard_unit</ClosedNode>
+         <ClosedNode>/mips E:|CO_cpu|P7|mips.v/dp_unit - datapath/d_unit - D_unit</ClosedNode>
+         <ClosedNode>/mips E:|CO_cpu|P7|mips.v/dp_unit - datapath/e_unit - E_unit</ClosedNode>
+         <ClosedNode>/mips E:|CO_cpu|P7|mips.v/dp_unit - datapath/f_unit - F_unit</ClosedNode>
+         <ClosedNode>/mips E:|CO_cpu|P7|mips.v/dp_unit - datapath/m_unit - M_unit</ClosedNode>
+         <ClosedNode>/mips E:|CO_cpu|P7|mips.v/dp_unit - datapath/w_unit - W_unit</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>f_unit - F_unit (E:/CO_cpu/P7/F_unit.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >5</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001c6000000020000000000000000000000000200000064ffffffff000000810000000300000002000001c60000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>f_unit - F_unit (E:/CO_cpu/P7/F_unit.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000014a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000014a0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000004d2000000040101000100000000000000000000000064ffffffff000000810000000000000004000000760000000100000000000000600000000100000000000000780000000100000000000003840000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>alu_E.v</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000121000000010001000100000000000000000000000064ffffffff000000810000000000000001000001210000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/alu_test E:|CO_cpu|P7|alu_test.v</ClosedNode>
+         <ClosedNode>/cpu E:|CO_cpu|P7|cpu.v</ClosedNode>
+         <ClosedNode>/cpu_test E:|CO_cpu|P7|cpu_test.v/uut - cpu/dp_unit - datapath/m_unit - M_unit</ClosedNode>
+         <ClosedNode>/cpu_test E:|CO_cpu|P7|cpu_test.v/uut - cpu/dp_unit - datapath/w_unit - W_unit</ClosedNode>
+         <ClosedNode>/cpu_test E:|CO_cpu|P7|cpu_test.v/uut - cpu/hz_unit - Hazard_unit</ClosedNode>
+         <ClosedNode>/mips E:|CO_cpu|P7|mips.v/cpu - cpu</ClosedNode>
+         <ClosedNode>/mips_test E:|CO_cpu|P7|mips_test.v/uut - mips/cpu - cpu/dp_unit - datapath/d_unit - D_unit</ClosedNode>
+         <ClosedNode>/mips_test E:|CO_cpu|P7|mips_test.v/uut - mips/cpu - cpu/dp_unit - datapath/e_unit - E_unit</ClosedNode>
+         <ClosedNode>/mips_test E:|CO_cpu|P7|mips_test.v/uut - mips/cpu - cpu/dp_unit - datapath/exec_unit - Exception</ClosedNode>
+         <ClosedNode>/mips_test E:|CO_cpu|P7|mips_test.v/uut - mips/cpu - cpu/dp_unit - datapath/m_unit - M_unit</ClosedNode>
+         <ClosedNode>/mips_test E:|CO_cpu|P7|mips_test.v/uut - mips/cpu - cpu/dp_unit - datapath/w_unit - W_unit</ClosedNode>
+         <ClosedNode>/mips_test E:|CO_cpu|P7|mips_test.v/uut - mips/cpu - cpu/hz_unit - Hazard_unit</ClosedNode>
+         <ClosedNode>/mips_test E:|CO_cpu|P7|mips_test.v/uut - mips/dp_unit - datapath/d_unit - D_unit</ClosedNode>
+         <ClosedNode>/mips_test E:|CO_cpu|P7|mips_test.v/uut - mips/dp_unit - datapath/e_unit - E_unit</ClosedNode>
+         <ClosedNode>/mips_test E:|CO_cpu|P7|mips_test.v/uut - mips/dp_unit - datapath/m_unit - M_unit</ClosedNode>
+         <ClosedNode>/mips_test E:|CO_cpu|P7|mips_test.v/uut - mips/dp_unit - datapath/w_unit - W_unit</ClosedNode>
+         <ClosedNode>/mips_test E:|CO_cpu|P7|mips_test.v/uut - mips/hz_unit - Hazard_unit</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>cpu_test (E:/CO_cpu/P7/cpu_test.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001c6000000020000000000000000000000000200000064ffffffff000000810000000300000002000001c60000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>cpu_test (E:/CO_cpu/P7/cpu_test.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000014a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000014a0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <SourceProcessView>000000ff00000000000000020000012d0000011b01000000050100000002</SourceProcessView>
+   <CurrentView>Behavioral Simulation</CurrentView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000014a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000014a0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000014a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000014a0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+</Project>

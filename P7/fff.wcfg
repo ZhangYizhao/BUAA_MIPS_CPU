@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="E:/CO_cpu/P7/cpu_test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="cpu_test" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/cpu_test/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_test/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_test/uut/dp_unit/d_unit/IRD" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">IRD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IRD[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_test/uut/dp_unit/e_unit/IRE" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">IRE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IRE[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_test/uut/dp_unit/m_unit/IRM" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">IRM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IRM[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_test/uut/dp_unit/w_unit/IRW" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">IRW[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IRW[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,90 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to E:/CO_cpu/P4/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to E:/CO_cpu/P4/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rf_D.v" in library work
+Compiling verilog file "pc_F.v" in library work
+Module <rf_D> compiled
+Compiling verilog include file "macros.v"
+Compiling verilog file "npc_D.v" in library work
+Module <pc_F> compiled
+Compiling verilog file "im_F.v" in library work
+Module <npc_D> compiled
+Compiling verilog file "Forward_mux_E.v" in library work
+Module <im_F> compiled
+Compiling verilog include file "macros.v"
+Compiling verilog file "Forward_mux_D.v" in library work
+Module <Forward_mux_E> compiled
+Compiling verilog include file "macros.v"
+Compiling verilog file "ext_D.v" in library work
+Module <Forward_mux_D> compiled
+Compiling verilog file "dm_M.v" in library work
+Module <ext_D> compiled
+Compiling verilog file "Crtl.v" in library work
+Module <dm_M> compiled
+Compiling verilog include file "macros.v"
+Compiling verilog file "cmp_D.v" in library work
+Module <Crtl> compiled
+Compiling verilog include file "macros.v"
+Compiling verilog file "alu_E.v" in library work
+Module <cmp_D> compiled
+Compiling verilog include file "macros.v"
+Compiling verilog file "W_unit.v" in library work
+Module <alu_E> compiled
+Compiling verilog include file "macros.v"
+Compiling verilog file "M_unit.v" in library work
+Module <W_unit> compiled
+Compiling verilog include file "macros.v"
+Compiling verilog file "F_unit.v" in library work
+Module <M_unit> compiled
+Compiling verilog include file "macros.v"
+Compiling verilog file "E_unit.v" in library work
+Module <F_unit> compiled
+Compiling verilog include file "macros.v"
+Compiling verilog file "D_unit.v" in library work
+Module <E_unit> compiled
+Compiling verilog include file "macros.v"
+Compiling verilog file "ATdecoder.v" in library work
+Module <D_unit> compiled
+Compiling verilog include file "macros.v"
+Compiling verilog file "Hazard_unit.v" in library work
+Module <ATdecoder> compiled
+Compiling verilog include file "macros.v"
+Compiling verilog file "datapath.v" in library work
+Module <Hazard_unit> compiled
+Compiling verilog include file "macros.v"
+Compiling verilog file "mips.v" in library work
+Module <datapath> compiled
+Compiling verilog include file "macros.v"
+Module <mips> compiled
+No errors in compilation
+Analysis of file <"mips.prj"> succeeded.
+ 
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> 
+
+Total memory usage is 4485304 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,377 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: GRF.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "GRF.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "GRF"
+Output Format                      : NGC
+Target Device                      : xc3s50-5-pq208
+
+---- Source Options
+Top Module Name                    : GRF
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "GRF.v" in library work
+Module <GRF> compiled
+No errors in compilation
+Analysis of file <"GRF.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <GRF> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <GRF>.
+WARNING:Xst:2323 - "GRF.v" line 58: Parameter 2 is not constant in call of system task $display.
+WARNING:Xst:2323 - "GRF.v" line 58: Parameter 3 is not constant in call of system task $display.
+WARNING:Xst:2323 - "GRF.v" line 58: Parameter 4 is not constant in call of system task $display.
+"GRF.v" line 58: $display : @%h: $%d <= %h
+Module <GRF> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <i> in unit <GRF> has a constant value of 100000 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <GRF>.
+    Related source file is "GRF.v".
+WARNING:Xst:647 - Input <InsAddr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:738 - HDL ADVISOR - 1024 flip-flops were inferred for signal <grf>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred 1024 D-type flip-flop(s).
+	inferred  64 Multiplexer(s).
+Unit <GRF> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 1024
+ 1-bit register                                        : 1024
+# Multiplexers                                         : 2
+ 32-bit 32-to-1 multiplexer                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 1024
+ Flip-Flops                                            : 1024
+# Multiplexers                                         : 64
+ 1-bit 32-to-1 multiplexer                             : 64
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <GRF> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block GRF, actual ratio is 143.
+Optimizing block <GRF> to meet ratio 100 (+ 5) of 768 slices :
+WARNING:Xst:2254 - Area constraint could not be met for block <GRF>, final ratio is 143.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1024
+ Flip-Flops                                            : 1024
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : GRF.ngr
+Top Level Output File Name         : GRF
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 146
+
+Cell Usage :
+# BELS                             : 2063
+#      BUF                         : 4
+#      GND                         : 1
+#      LUT2                        : 33
+#      LUT3                        : 1055
+#      LUT4                        : 9
+#      MUXF5                       : 513
+#      MUXF6                       : 256
+#      MUXF7                       : 128
+#      MUXF8                       : 64
+# FlipFlops/Latches                : 1024
+#      FDRE                        : 1024
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 113
+#      IBUF                        : 49
+#      OBUF                        : 64
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50pq208-5 
+
+ Number of Slices:                     1105  out of    768   143% (*) 
+ Number of Slice Flip Flops:           1024  out of   1536    66%  
+ Number of 4 input LUTs:               1097  out of   1536    71%  
+ Number of IOs:                         146
+ Number of bonded IOBs:                 114  out of    124    91%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clk                                | BUFGP                  | 1024  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 8.255ns
+   Maximum output required time after clock: 8.818ns
+   Maximum combinational path delay: 14.102ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
+  Total number of paths / destination ports: 8352 / 3072
+-------------------------------------------------------------------------
+Offset:              8.255ns (Levels of Logic = 2)
+  Source:            Reset (PAD)
+  Destination:       grf<1>_31 (FF)
+  Destination Clock: Clk rising
+
+  Data Path: Reset to grf<1>_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           342   0.715   3.085  Reset_IBUF (Reset_IBUF)
+     BUF:I->O            342   0.479   3.085  Reset_IBUF_1 (Reset_IBUF_1)
+     FDRE:R                    0.892          grf<9>_9
+    ----------------------------------------
+    Total                      8.255ns (2.086ns logic, 6.169ns route)
+                                       (25.3% logic, 74.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
+  Total number of paths / destination ports: 2048 / 64
+-------------------------------------------------------------------------
+Offset:              8.818ns (Levels of Logic = 6)
+  Source:            grf<0>_31 (FF)
+  Destination:       RD1<31> (PAD)
+  Source Clock:      Clk rising
+
+  Data Path: grf<0>_31 to RD1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.626   0.915  grf<0>_31 (grf<0>_31)
+     LUT3:I1->O            1   0.479   0.000  mux24_10 (mux24_10)
+     MUXF5:I0->O           1   0.314   0.000  mux24_8_f5 (mux24_8_f5)
+     MUXF6:I0->O           1   0.298   0.000  mux24_6_f6 (mux24_6_f6)
+     MUXF7:I0->O           1   0.298   0.000  mux24_4_f7 (mux24_4_f7)
+     MUXF8:I0->O           1   0.298   0.681  mux24_2_f8 (RD1_31_OBUF)
+     OBUF:I->O                 4.909          RD1_31_OBUF (RD1<31>)
+    ----------------------------------------
+    Total                      8.818ns (7.222ns logic, 1.596ns route)
+                                       (81.9% logic, 18.1% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1984 / 64
+-------------------------------------------------------------------------
+Delay:               14.102ns (Levels of Logic = 8)
+  Source:            R1<0> (PAD)
+  Destination:       RD1<31> (PAD)
+
+  Data Path: R1<0> to RD1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           256   0.715   2.666  R1_0_IBUF (R1_0_IBUF)
+     BUF:I->O            257   0.479   2.966  R1_0_IBUF_1 (R1_0_IBUF_1)
+     LUT3:I0->O            1   0.479   0.000  mux_93 (mux_93)
+     MUXF5:I1->O           1   0.314   0.000  mux_8_f5 (mux_8_f5)
+     MUXF6:I0->O           1   0.298   0.000  mux_6_f6 (mux_6_f6)
+     MUXF7:I0->O           1   0.298   0.000  mux_4_f7 (mux_4_f7)
+     MUXF8:I0->O           1   0.298   0.681  mux_2_f8 (RD1_0_OBUF)
+     OBUF:I->O                 4.909          RD1_0_OBUF (RD1<0>)
+    ----------------------------------------
+    Total                     14.102ns (7.790ns logic, 6.312ns route)
+                                       (55.2% logic, 44.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.96 secs
+ 
+--> 
+
+Total memory usage is 4543144 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

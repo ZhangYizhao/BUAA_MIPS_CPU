@@ -1,0 +1,5 @@
+set -tmpdir "E:/CO_cpu/P4/xst/projnav.tmp"
+set -xsthdpdir "E:/CO_cpu/P4/xst"
+elaborate
+-ifn ATdecoder.prj
+-ifmt mixed

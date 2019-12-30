@@ -1,0 +1,3 @@
+verilog work "pc_F.v"
+verilog work "im_F.v"
+verilog work "F_unit.v"

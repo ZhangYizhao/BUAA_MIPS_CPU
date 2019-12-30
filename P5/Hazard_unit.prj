@@ -1,0 +1,2 @@
+verilog work "ATdecoder.v"
+verilog work "Hazard_unit.v"

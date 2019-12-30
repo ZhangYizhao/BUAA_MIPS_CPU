@@ -1,0 +1,313 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: mips.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "mips.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "mips"
+Output Format                      : NGC
+Target Device                      : xc3s50-5-pq208
+
+---- Source Options
+Top Module Name                    : mips
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rf_D.v" in library work
+Compiling verilog file "pc_F.v" in library work
+Module <rf_D> compiled
+Compiling verilog include file "macros.v"
+Compiling verilog file "npc_D.v" in library work
+Module <pc_F> compiled
+Compiling verilog file "md_E.v" in library work
+Module <npc_D> compiled
+Compiling verilog include file "macros.v"
+Compiling verilog file "im_F.v" in library work
+Module <md_E> compiled
+Compiling verilog file "Forward_mux_E.v" in library work
+Module <im_F> compiled
+Compiling verilog include file "macros.v"
+Compiling verilog file "Forward_mux_D.v" in library work
+Module <Forward_mux_E> compiled
+Compiling verilog include file "macros.v"
+Compiling verilog file "ext_D.v" in library work
+Module <Forward_mux_D> compiled
+Compiling verilog file "exc_M.v" in library work
+Module <ext_D> compiled
+Compiling verilog include file "macros.v"
+Compiling verilog file "exc_E.v" in library work
+Module <exc_M> compiled
+Compiling verilog include file "macros.v"
+Compiling verilog file "dm_M.v" in library work
+Module <exc_E> compiled
+Compiling verilog file "Crtl.v" in library work
+Module <dm_M> compiled
+Compiling verilog include file "macros.v"
+WARNING:HDLCompilers:299 - "Crtl.v" line 81 Too many digits specified in binary constant
+WARNING:HDLCompilers:299 - "Crtl.v" line 137 Too many digits specified in binary constant
+WARNING:HDLCompilers:299 - "Crtl.v" line 164 Too many digits specified in binary constant
+Compiling verilog file "cmp_D.v" in library work
+Module <Crtl> compiled
+Compiling verilog include file "macros.v"
+Compiling verilog file "alu_E.v" in library work
+Module <cmp_D> compiled
+Compiling verilog include file "macros.v"
+Compiling verilog file "W_unit.v" in library work
+Module <alu_E> compiled
+Compiling verilog include file "macros.v"
+Compiling verilog file "M_unit.v" in library work
+Module <W_unit> compiled
+Compiling verilog include file "macros.v"
+Compiling verilog file "F_unit.v" in library work
+Module <M_unit> compiled
+Compiling verilog include file "macros.v"
+Compiling verilog file "E_unit.v" in library work
+Module <F_unit> compiled
+Compiling verilog include file "macros.v"
+Compiling verilog file "Exception.v" in library work
+Module <E_unit> compiled
+Compiling verilog include file "macros.v"
+Compiling verilog file "D_unit.v" in library work
+Module <Exception> compiled
+Compiling verilog include file "macros.v"
+Compiling verilog file "ATdecoder.v" in library work
+Module <D_unit> compiled
+Compiling verilog include file "macros.v"
+WARNING:HDLCompilers:299 - "ATdecoder.v" line 67 Too many digits specified in binary constant
+Compiling verilog file "Hazard_unit.v" in library work
+Module <ATdecoder> compiled
+Compiling verilog include file "macros.v"
+Compiling verilog file "datapath.v" in library work
+Module <Hazard_unit> compiled
+Compiling verilog include file "macros.v"
+Compiling verilog file "TC.v" in library work
+Module <datapath> compiled
+Compiling verilog file "cpu.v" in library work
+Module <TC> compiled
+Compiling verilog include file "macros.v"
+Compiling verilog file "Bridge.v" in library work
+Module <cpu> compiled
+Compiling verilog include file "macros.v"
+Compiling verilog file "mips.v" in library work
+Module <Bridge> compiled
+Compiling verilog include file "macros.v"
+Module <mips> compiled
+No errors in compilation
+Analysis of file <"mips.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <mips> in library <work>.
+
+Analyzing hierarchy for module <cpu> in library <work>.
+
+Analyzing hierarchy for module <Bridge> in library <work>.
+
+Analyzing hierarchy for module <TC> in library <work>.
+
+Analyzing hierarchy for module <datapath> in library <work>.
+
+Analyzing hierarchy for module <Hazard_unit> in library <work>.
+
+Analyzing hierarchy for module <Exception> in library <work>.
+
+Analyzing hierarchy for module <F_unit> in library <work>.
+
+Analyzing hierarchy for module <D_unit> in library <work>.
+
+Analyzing hierarchy for module <E_unit> in library <work>.
+
+Analyzing hierarchy for module <M_unit> in library <work>.
+
+Analyzing hierarchy for module <W_unit> in library <work>.
+
+Analyzing hierarchy for module <ATdecoder> in library <work>.
+
+Analyzing hierarchy for module <Crtl> in library <work>.
+
+Analyzing hierarchy for module <pc_F> in library <work>.
+
+Analyzing hierarchy for module <im_F> in library <work>.
+
+Analyzing hierarchy for module <cmp_D> in library <work>.
+
+Analyzing hierarchy for module <npc_D> in library <work>.
+
+Analyzing hierarchy for module <rf_D> in library <work>.
+
+Analyzing hierarchy for module <Forward_mux_D> in library <work>.
+
+Analyzing hierarchy for module <ext_D> in library <work>.
+
+Analyzing hierarchy for module <Forward_mux_E> in library <work>.
+
+Analyzing hierarchy for module <alu_E> in library <work>.
+
+Analyzing hierarchy for module <md_E> in library <work>.
+
+Analyzing hierarchy for module <exc_E> in library <work>.
+
+Analyzing hierarchy for module <dm_M> in library <work>.
+
+Analyzing hierarchy for module <exc_M> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <mips>.
+Module <mips> is correct for synthesis.
+ 
+Analyzing module <cpu> in library <work>.
+Module <cpu> is correct for synthesis.
+ 
+Analyzing module <datapath> in library <work>.
+WARNING:Xst:852 - "datapath.v" line 171: Unconnected input port 'RTW' of instance 'w_unit' is tied to GND.
+Module <datapath> is correct for synthesis.
+ 
+Analyzing module <Exception> in library <work>.
+WARNING:Xst:2725 - "Exception.v" line 119: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Exception.v" line 124: Size mismatch between case item and case selector.
+Module <Exception> is correct for synthesis.
+ 
+Analyzing module <Crtl> in library <work>.
+WARNING:Xst:863 - "Crtl.v" line 22: Name conflict (<instr> and <Instr>, renaming instr as instr_rnm0).
+Module <Crtl> is correct for synthesis.
+ 
+Analyzing module <F_unit> in library <work>.
+Module <F_unit> is correct for synthesis.
+ 
+Analyzing module <pc_F> in library <work>.
+Module <pc_F> is correct for synthesis.
+ 
+Analyzing module <im_F> in library <work>.
+INFO:Xst:2546 - "im_F.v" line 34: reading initialization file "code.txt".
+INFO:Xst:2546 - "im_F.v" line 35: reading initialization file "code_handler.txt".
+INFO:Xst:1607 - Contents of array <IM> may be accessed with an index that does not cover the full array size.
+Module <im_F> is correct for synthesis.
+ 
+Analyzing module <D_unit> in library <work>.
+Module <D_unit> is correct for synthesis.
+ 
+Analyzing module <cmp_D> in library <work>.
+WARNING:Xst:863 - "cmp_D.v" line 24: Name conflict (<instr> and <Instr>, renaming instr as instr_rnm0).
+Module <cmp_D> is correct for synthesis.
+ 
+Analyzing module <npc_D> in library <work>.
+Module <npc_D> is correct for synthesis.
+ 
+Analyzing module <rf_D> in library <work>.
+WARNING:Xst:2321 - "rf_D.v" line 58: Parameter 2 ($time) is not supported in call of system task $display.
+WARNING:Xst:2323 - "rf_D.v" line 58: Parameter 3 is not constant in call of system task $display.
+WARNING:Xst:2323 - "rf_D.v" line 58: Parameter 4 is not constant in call of system task $display.
+WARNING:Xst:2323 - "rf_D.v" line 58: Parameter 5 is not constant in call of system task $display.
+"rf_D.v" line 58: $display : %h: $%d <= %h
+Module <rf_D> is correct for synthesis.
+ 
+Analyzing module <Forward_mux_D> in library <work>.
+Module <Forward_mux_D> is correct for synthesis.
+ 
+Analyzing module <ext_D> in library <work>.
+Module <ext_D> is correct for synthesis.
+ 
+Analyzing module <E_unit> in library <work>.
+WARNING:Xst:863 - "E_unit.v" line 46: Name conflict (<start> and <Start>, renaming start as start_rnm0).
+Module <E_unit> is correct for synthesis.
+ 
+Analyzing module <Forward_mux_E> in library <work>.
+Module <Forward_mux_E> is correct for synthesis.
+ 
+Analyzing module <alu_E> in library <work>.

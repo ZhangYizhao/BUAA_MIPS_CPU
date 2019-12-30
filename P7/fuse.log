@@ -1,0 +1,104 @@
+Running: E:\ISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o E:/CO_cpu/P7/cpu_test_isim_beh.exe -prj E:/CO_cpu/P7/cpu_test_beh.prj work.cpu_test work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 6
+Turning on mult-threading, number of parallel sub-compilation jobs: 12 
+Determining compilation order of HDL files
+Analyzing Verilog file "E:/CO_cpu/P7/rf_D.v" into library work
+Analyzing Verilog file "E:/CO_cpu/P7/pc_F.v" into library work
+WARNING:HDLCompiler:1142 - "E:/CO_cpu/P7/pc_F.v" Line 1: Compiler directive `timescale is not allowed here
+Analyzing Verilog file "E:/CO_cpu/P7/npc_D.v" into library work
+Analyzing Verilog file "E:/CO_cpu/P7/md_E.v" into library work
+WARNING:HDLCompiler:1142 - "E:/CO_cpu/P7/md_E.v" Line 1: Compiler directive `timescale is not allowed here
+Analyzing Verilog file "E:/CO_cpu/P7/im_F.v" into library work
+Analyzing Verilog file "E:/CO_cpu/P7/Forward_mux_E.v" into library work
+WARNING:HDLCompiler:1142 - "E:/CO_cpu/P7/Forward_mux_E.v" Line 1: Compiler directive `timescale is not allowed here
+Analyzing Verilog file "E:/CO_cpu/P7/Forward_mux_D.v" into library work
+WARNING:HDLCompiler:1142 - "E:/CO_cpu/P7/Forward_mux_D.v" Line 1: Compiler directive `timescale is not allowed here
+Analyzing Verilog file "E:/CO_cpu/P7/ext_D.v" into library work
+Analyzing Verilog file "E:/CO_cpu/P7/exc_M.v" into library work
+WARNING:HDLCompiler:1142 - "E:/CO_cpu/P7/exc_M.v" Line 1: Compiler directive `timescale is not allowed here
+Analyzing Verilog file "E:/CO_cpu/P7/exc_E.v" into library work
+WARNING:HDLCompiler:1142 - "E:/CO_cpu/P7/exc_E.v" Line 1: Compiler directive `timescale is not allowed here
+Analyzing Verilog file "E:/CO_cpu/P7/dm_M.v" into library work
+Analyzing Verilog file "E:/CO_cpu/P7/Crtl.v" into library work
+WARNING:HDLCompiler:1142 - "E:/CO_cpu/P7/Crtl.v" Line 1: Compiler directive `timescale is not allowed here
+Analyzing Verilog file "E:/CO_cpu/P7/cmp_D.v" into library work
+WARNING:HDLCompiler:1142 - "E:/CO_cpu/P7/cmp_D.v" Line 1: Compiler directive `timescale is not allowed here
+Analyzing Verilog file "E:/CO_cpu/P7/alu_E.v" into library work
+WARNING:HDLCompiler:1142 - "E:/CO_cpu/P7/alu_E.v" Line 1: Compiler directive `timescale is not allowed here
+Analyzing Verilog file "E:/CO_cpu/P7/W_unit.v" into library work
+WARNING:HDLCompiler:1142 - "E:/CO_cpu/P7/W_unit.v" Line 1: Compiler directive `timescale is not allowed here
+Analyzing Verilog file "E:/CO_cpu/P7/M_unit.v" into library work
+WARNING:HDLCompiler:1142 - "E:/CO_cpu/P7/M_unit.v" Line 1: Compiler directive `timescale is not allowed here
+Analyzing Verilog file "E:/CO_cpu/P7/F_unit.v" into library work
+WARNING:HDLCompiler:1142 - "E:/CO_cpu/P7/F_unit.v" Line 1: Compiler directive `timescale is not allowed here
+Analyzing Verilog file "E:/CO_cpu/P7/E_unit.v" into library work
+WARNING:HDLCompiler:1142 - "E:/CO_cpu/P7/E_unit.v" Line 1: Compiler directive `timescale is not allowed here
+Analyzing Verilog file "E:/CO_cpu/P7/Exception.v" into library work
+WARNING:HDLCompiler:1142 - "E:/CO_cpu/P7/Exception.v" Line 1: Compiler directive `timescale is not allowed here
+WARNING:HDLCompiler:327 - "E:/CO_cpu/P7/Exception.v" Line 72: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "E:/CO_cpu/P7/Exception.v" Line 73: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "E:/CO_cpu/P7/Exception.v" Line 74: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "E:/CO_cpu/P7/Exception.v" Line 75: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "E:/CO_cpu/P7/Exception.v" Line 118: Concatenation with unsized literal; will interpret as 32 bits
+Analyzing Verilog file "E:/CO_cpu/P7/D_unit.v" into library work
+WARNING:HDLCompiler:1142 - "E:/CO_cpu/P7/D_unit.v" Line 1: Compiler directive `timescale is not allowed here
+Analyzing Verilog file "E:/CO_cpu/P7/ATdecoder.v" into library work
+WARNING:HDLCompiler:1142 - "E:/CO_cpu/P7/ATdecoder.v" Line 1: Compiler directive `timescale is not allowed here
+Analyzing Verilog file "E:/CO_cpu/P7/Hazard_unit.v" into library work
+WARNING:HDLCompiler:1142 - "E:/CO_cpu/P7/Hazard_unit.v" Line 1: Compiler directive `timescale is not allowed here
+WARNING:HDLCompiler:327 - "E:/CO_cpu/P7/Hazard_unit.v" Line 60: Concatenation with unsized literal; will interpret as 32 bits
+Analyzing Verilog file "E:/CO_cpu/P7/datapath.v" into library work
+WARNING:HDLCompiler:1142 - "E:/CO_cpu/P7/datapath.v" Line 1: Compiler directive `timescale is not allowed here
+WARNING:HDLCompiler:327 - "E:/CO_cpu/P7/datapath.v" Line 53: Concatenation with unsized literal; will interpret as 32 bits
+Analyzing Verilog file "E:/CO_cpu/P7/cpu.v" into library work
+WARNING:HDLCompiler:1142 - "E:/CO_cpu/P7/cpu.v" Line 1: Compiler directive `timescale is not allowed here
+Analyzing Verilog file "E:/CO_cpu/P7/cpu_test.v" into library work
+Analyzing Verilog file "E:/ISE/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "E:/CO_cpu/P7/cpu_test.v" Line 32: Port PrRD is not connected to this instance
+WARNING:HDLCompiler:327 - "E:/CO_cpu/P7/datapath.v" Line 53: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:1016 - "E:/CO_cpu/P7/datapath.v" Line 171: Port RTW is not connected to this instance
+WARNING:HDLCompiler:327 - "E:/CO_cpu/P7/Exception.v" Line 72: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "E:/CO_cpu/P7/Exception.v" Line 73: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "E:/CO_cpu/P7/Exception.v" Line 74: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "E:/CO_cpu/P7/Exception.v" Line 75: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:1016 - "E:/CO_cpu/P7/Exception.v" Line 133: Port MemtoReg is not connected to this instance
+WARNING:HDLCompiler:1016 - "E:/CO_cpu/P7/D_unit.v" Line 60: Port MemtoReg is not connected to this instance
+WARNING:HDLCompiler:1016 - "E:/CO_cpu/P7/E_unit.v" Line 88: Port MemtoReg is not connected to this instance
+WARNING:HDLCompiler:1016 - "E:/CO_cpu/P7/M_unit.v" Line 63: Port MemtoReg is not connected to this instance
+WARNING:HDLCompiler:1016 - "E:/CO_cpu/P7/W_unit.v" Line 36: Port MemWrite is not connected to this instance
+WARNING:HDLCompiler:327 - "E:/CO_cpu/P7/Hazard_unit.v" Line 60: Concatenation with unsized literal; will interpret as 32 bits
+Completed static elaboration
+Compiling module Crtl
+Compiling module Exception
+Compiling module pc_F
+Compiling module im_F
+Compiling module F_unit
+Compiling module cmp_D
+Compiling module npc_D
+Compiling module rf_D
+Compiling module Forward_mux_D
+Compiling module ext_D
+Compiling module D_unit
+Compiling module Forward_mux_E
+Compiling module alu_E
+Compiling module md_E
+Compiling module exc_E
+Compiling module E_unit
+Compiling module dm_M
+Compiling module exc_M
+Compiling module M_unit
+Compiling module W_unit
+Compiling module datapath
+Compiling module ATdecoder
+Compiling module Hazard_unit
+Compiling module cpu
+Compiling module cpu_test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 8 sub-compilation(s) to finish...
+Compiled 26 Verilog Units
+Built simulation executable E:/CO_cpu/P7/cpu_test_isim_beh.exe
+Fuse Memory Usage: 39092 KB
+Fuse CPU Usage: 656 ms

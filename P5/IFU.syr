@@ -1,0 +1,490 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: IFU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "IFU.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "IFU"
+Output Format                      : NGC
+Target Device                      : xc3s50-5-pq208
+
+---- Source Options
+Top Module Name                    : IFU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "IFU.v" in library work
+Module <IFU> compiled
+No errors in compilation
+Analysis of file <"IFU.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <IFU> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <IFU>.
+INFO:Xst:2546 - "IFU.v" line 41: reading initialization file "ins.dat".
+"IFU.v" line 44: $display : IM[         0] = 341c0000
+"IFU.v" line 44: $display : IM[         1] = 341d0000
+"IFU.v" line 44: $display : IM[         2] = 340080f8
+"IFU.v" line 44: $display : IM[         3] = 36ee0367
+"IFU.v" line 44: $display : IM[         4] = 3593769c
+"IFU.v" line 44: $display : IM[         5] = 34dda539
+"IFU.v" line 44: $display : IM[         6] = 3465c5dc
+"IFU.v" line 44: $display : IM[         7] = 34be0ff1
+"IFU.v" line 44: $display : IM[         8] = 3472af1d
+"IFU.v" line 44: $display : IM[         9] = 35566602
+"IFU.v" line 44: $display : IM[        10] = 35fe72a7
+"IFU.v" line 44: $display : IM[        11] = 3437ff23
+"IFU.v" line 44: $display : IM[        12] = 37b9649e
+"IFU.v" line 44: $display : IM[        13] = 3690bf9b
+"IFU.v" line 44: $display : IM[        14] = 37fe4e0c
+"IFU.v" line 44: $display : IM[        15] = 3711f49d
+"IFU.v" line 44: $display : IM[        16] = 3c113bfe
+"IFU.v" line 44: $display : IM[        17] = 3c057433
+"IFU.v" line 44: $display : IM[        18] = 3c03c451
+"IFU.v" line 44: $display : IM[        19] = 3c04c431
+"IFU.v" line 44: $display : IM[        20] = 3c1c24d9
+"IFU.v" line 44: $display : IM[        21] = 3c1bf0da
+"IFU.v" line 44: $display : IM[        22] = 3c0ccc68
+"IFU.v" line 44: $display : IM[        23] = 3c0a118d
+"IFU.v" line 44: $display : IM[        24] = 3c1021ea
+"IFU.v" line 44: $display : IM[        25] = 3c0004d3
+"IFU.v" line 44: $display : IM[        26] = 3c16115b
+"IFU.v" line 44: $display : IM[        27] = 3c184f06
+"IFU.v" line 44: $display : IM[        28] = 3c1215de
+"IFU.v" line 44: $display : IM[        29] = 1000ffff
+WARNING:Xst:2323 - "IFU.v" line 44: Parameter 3 is not constant in call of system task $display.
+"IFU.v" line 44: $display : IM[        30] = %h
+WARNING:Xst:2323 - "IFU.v" line 44: Parameter 3 is not constant in call of system task $display.
+"IFU.v" line 44: $display : IM[        31] = %h
+WARNING:Xst:2323 - "IFU.v" line 44: Parameter 3 is not constant in call of system task $display.
+"IFU.v" line 44: $display : IM[        32] = %h
+WARNING:Xst:2323 - "IFU.v" line 44: Parameter 3 is not constant in call of system task $display.
+"IFU.v" line 44: $display : IM[        33] = %h
+WARNING:Xst:2323 - "IFU.v" line 44: Parameter 3 is not constant in call of system task $display.
+"IFU.v" line 44: $display : IM[        34] = %h
+WARNING:Xst:2323 - "IFU.v" line 44: Parameter 3 is not constant in call of system task $display.
+"IFU.v" line 44: $display : IM[        35] = %h
+WARNING:Xst:2323 - "IFU.v" line 44: Parameter 3 is not constant in call of system task $display.
+"IFU.v" line 44: $display : IM[        36] = %h
+WARNING:Xst:2323 - "IFU.v" line 44: Parameter 3 is not constant in call of system task $display.
+"IFU.v" line 44: $display : IM[        37] = %h
+WARNING:Xst:2323 - "IFU.v" line 44: Parameter 3 is not constant in call of system task $display.
+"IFU.v" line 44: $display : IM[        38] = %h
+WARNING:Xst:2323 - "IFU.v" line 44: Parameter 3 is not constant in call of system task $display.
+"IFU.v" line 44: $display : IM[        39] = %h
+WARNING:Xst:2323 - "IFU.v" line 44: Parameter 3 is not constant in call of system task $display.
+"IFU.v" line 44: $display : IM[        40] = %h
+WARNING:Xst:2319 - "IFU.v" line 41: Signal IM in initial block is partially initialized. The initialization will be ignored.
+Module <IFU> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <IFU>.
+    Related source file is "IFU.v".
+WARNING:Xst:653 - Signal <IM> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
+    Found 32-bit adder for signal <next$addsub0000> created at line 53.
+    Found 32-bit adder for signal <next$addsub0001> created at line 53.
+    Found 32-bit register for signal <pc>.
+    Found 32-bit adder for signal <PC4$add0000> created at line 50.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+Unit <IFU> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 3
+# Registers                                            : 1
+ 32-bit register                                       : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 3
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <IFU> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block IFU, actual ratio is 8.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : IFU.ngr
+Top Level Output File Name         : IFU
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 133
+
+Cell Usage :
+# BELS                             : 250
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 58
+#      LUT2                        : 1
+#      LUT2_L                      : 2
+#      LUT3                        : 12
+#      LUT4                        : 25
+#      LUT4_L                      : 28
+#      MUXCY                       : 58
+#      MUXF5                       : 2
+#      VCC                         : 1
+#      XORCY                       : 60
+# FlipFlops/Latches                : 32
+#      FDC                         : 30
+#      FDP                         : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 132
+#      IBUF                        : 36
+#      OBUF                        : 96
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50pq208-5 
+
+ Number of Slices:                       64  out of    768     8%  
+ Number of Slice Flip Flops:             32  out of   1536     2%  
+ Number of 4 input LUTs:                128  out of   1536     8%  
+ Number of IOs:                         133
+ Number of bonded IOBs:                 133  out of    124   107% (*) 
+ Number of GCLKs:                         1  out of      8    12%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clk                                | BUFGP                  | 32    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+Reset                              | IBUF                   | 32    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 6.851ns (Maximum Frequency: 145.958MHz)
+   Minimum input arrival time before clock: 6.185ns
+   Maximum output required time after clock: 10.545ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk'
+  Clock period: 6.851ns (frequency: 145.958MHz)
+  Total number of paths / destination ports: 938 / 32
+-------------------------------------------------------------------------
+Delay:               6.851ns (Levels of Logic = 32)
+  Source:            pc_3 (FF)
+  Destination:       pc_31 (FF)
+  Source Clock:      Clk rising
+  Destination Clock: Clk rising
+
+  Data Path: pc_3 to pc_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.626   1.066  pc_3 (pc_3)
+     LUT1:I0->O            1   0.479   0.000  Madd_next_addsub0001_Madd_cy<3>_rt (Madd_next_addsub0001_Madd_cy<3>_rt)
+     MUXCY:S->O            1   0.435   0.000  Madd_next_addsub0001_Madd_cy<3> (Madd_next_addsub0001_Madd_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_next_addsub0001_Madd_cy<4> (Madd_next_addsub0001_Madd_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_next_addsub0001_Madd_cy<5> (Madd_next_addsub0001_Madd_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_next_addsub0001_Madd_cy<6> (Madd_next_addsub0001_Madd_cy<6>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_next_addsub0001_Madd_cy<7> (Madd_next_addsub0001_Madd_cy<7>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_next_addsub0001_Madd_cy<8> (Madd_next_addsub0001_Madd_cy<8>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_next_addsub0001_Madd_cy<9> (Madd_next_addsub0001_Madd_cy<9>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_next_addsub0001_Madd_cy<10> (Madd_next_addsub0001_Madd_cy<10>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_next_addsub0001_Madd_cy<11> (Madd_next_addsub0001_Madd_cy<11>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_next_addsub0001_Madd_cy<12> (Madd_next_addsub0001_Madd_cy<12>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_next_addsub0001_Madd_cy<13> (Madd_next_addsub0001_Madd_cy<13>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_next_addsub0001_Madd_cy<14> (Madd_next_addsub0001_Madd_cy<14>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_next_addsub0001_Madd_cy<15> (Madd_next_addsub0001_Madd_cy<15>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_next_addsub0001_Madd_cy<16> (Madd_next_addsub0001_Madd_cy<16>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_next_addsub0001_Madd_cy<17> (Madd_next_addsub0001_Madd_cy<17>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_next_addsub0001_Madd_cy<18> (Madd_next_addsub0001_Madd_cy<18>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_next_addsub0001_Madd_cy<19> (Madd_next_addsub0001_Madd_cy<19>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_next_addsub0001_Madd_cy<20> (Madd_next_addsub0001_Madd_cy<20>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_next_addsub0001_Madd_cy<21> (Madd_next_addsub0001_Madd_cy<21>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_next_addsub0001_Madd_cy<22> (Madd_next_addsub0001_Madd_cy<22>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_next_addsub0001_Madd_cy<23> (Madd_next_addsub0001_Madd_cy<23>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_next_addsub0001_Madd_cy<24> (Madd_next_addsub0001_Madd_cy<24>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_next_addsub0001_Madd_cy<25> (Madd_next_addsub0001_Madd_cy<25>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_next_addsub0001_Madd_cy<26> (Madd_next_addsub0001_Madd_cy<26>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_next_addsub0001_Madd_cy<27> (Madd_next_addsub0001_Madd_cy<27>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_next_addsub0001_Madd_cy<28> (Madd_next_addsub0001_Madd_cy<28>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_next_addsub0001_Madd_cy<29> (Madd_next_addsub0001_Madd_cy<29>)
+     MUXCY:CI->O           0   0.056   0.000  Madd_next_addsub0001_Madd_cy<30> (Madd_next_addsub0001_Madd_cy<30>)
+     XORCY:CI->O           1   0.786   0.704  Madd_next_addsub0001_Madd_xor<31> (next_addsub0001<31>)
+     LUT4_L:I3->LO         1   0.479   0.123  next<31>_SW0 (N58)
+     LUT4:I3->O            1   0.479   0.000  next<31> (next<31>)
+     FDC:D                     0.176          pc_31
+    ----------------------------------------
+    Total                      6.851ns (4.959ns logic, 1.893ns route)
+                                       (72.4% logic, 27.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
+  Total number of paths / destination ports: 218 / 32
+-------------------------------------------------------------------------
+Offset:              6.185ns (Levels of Logic = 4)
+  Source:            PCsrc (PAD)
+  Destination:       pc_14 (FF)
+  Destination Clock: Clk rising
+
+  Data Path: PCsrc to pc_14
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            53   0.715   1.847  PCsrc_IBUF (PCsrc_IBUF)
+     LUT3:I1->O           28   0.479   1.851  next<2>11 (N0)
+     LUT4_L:I0->LO         1   0.479   0.159  next<4>_SW0 (N4)
+     LUT3:I2->O            1   0.479   0.000  next<4> (next<4>)
+     FDC:D                     0.176          pc_4
+    ----------------------------------------
+    Total                      6.185ns (2.328ns logic, 3.857ns route)
+                                       (37.6% logic, 62.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
+  Total number of paths / destination ports: 499 / 64
+-------------------------------------------------------------------------
+Offset:              10.545ns (Levels of Logic = 31)
+  Source:            pc_3 (FF)
+  Destination:       PC4<31> (PAD)
+  Source Clock:      Clk rising
+
+  Data Path: pc_3 to PC4<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.626   1.066  pc_3 (pc_3)
+     LUT1:I0->O            1   0.479   0.000  Madd_PC4_add0000_cy<3>_rt (Madd_PC4_add0000_cy<3>_rt)
+     MUXCY:S->O            1   0.435   0.000  Madd_PC4_add0000_cy<3> (Madd_PC4_add0000_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_PC4_add0000_cy<4> (Madd_PC4_add0000_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_PC4_add0000_cy<5> (Madd_PC4_add0000_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_PC4_add0000_cy<6> (Madd_PC4_add0000_cy<6>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_PC4_add0000_cy<7> (Madd_PC4_add0000_cy<7>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_PC4_add0000_cy<8> (Madd_PC4_add0000_cy<8>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_PC4_add0000_cy<9> (Madd_PC4_add0000_cy<9>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_PC4_add0000_cy<10> (Madd_PC4_add0000_cy<10>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_PC4_add0000_cy<11> (Madd_PC4_add0000_cy<11>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_PC4_add0000_cy<12> (Madd_PC4_add0000_cy<12>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_PC4_add0000_cy<13> (Madd_PC4_add0000_cy<13>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_PC4_add0000_cy<14> (Madd_PC4_add0000_cy<14>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_PC4_add0000_cy<15> (Madd_PC4_add0000_cy<15>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_PC4_add0000_cy<16> (Madd_PC4_add0000_cy<16>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_PC4_add0000_cy<17> (Madd_PC4_add0000_cy<17>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_PC4_add0000_cy<18> (Madd_PC4_add0000_cy<18>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_PC4_add0000_cy<19> (Madd_PC4_add0000_cy<19>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_PC4_add0000_cy<20> (Madd_PC4_add0000_cy<20>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_PC4_add0000_cy<21> (Madd_PC4_add0000_cy<21>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_PC4_add0000_cy<22> (Madd_PC4_add0000_cy<22>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_PC4_add0000_cy<23> (Madd_PC4_add0000_cy<23>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_PC4_add0000_cy<24> (Madd_PC4_add0000_cy<24>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_PC4_add0000_cy<25> (Madd_PC4_add0000_cy<25>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_PC4_add0000_cy<26> (Madd_PC4_add0000_cy<26>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_PC4_add0000_cy<27> (Madd_PC4_add0000_cy<27>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_PC4_add0000_cy<28> (Madd_PC4_add0000_cy<28>)
+     MUXCY:CI->O           1   0.056   0.000  Madd_PC4_add0000_cy<29> (Madd_PC4_add0000_cy<29>)
+     MUXCY:CI->O           0   0.056   0.000  Madd_PC4_add0000_cy<30> (Madd_PC4_add0000_cy<30>)
+     XORCY:CI->O           2   0.786   0.745  Madd_PC4_add0000_xor<31> (PC4_31_OBUF)
+     OBUF:I->O                 4.909          PC4_31_OBUF (PC4<31>)
+    ----------------------------------------
+    Total                     10.545ns (8.734ns logic, 1.811ns route)
+                                       (82.8% logic, 17.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.40 secs
+ 
+--> 
+
+Total memory usage is 4519272 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   14 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

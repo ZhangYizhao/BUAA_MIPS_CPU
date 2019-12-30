@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="E:/CO_cpu/P4/p4test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="p4test" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="28" />
+   <wvobject fp_name="/p4test/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p4test/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p4test/uut/dp_unit/d_unit/IRD" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">IRD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IRD[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p4test/uut/dp_unit/d_unit/PC4D" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PC4D[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC4D[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p4test/uut/dp_unit/e_unit/alu_e/SrcA" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">SrcA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SrcA[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p4test/uut/dp_unit/e_unit/alu_e/SrcB" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">SrcB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SrcB[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p4test/uut/dp_unit/e_unit/alu_e/ALUresult" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUresult[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUresult[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p4test/uut/dp_unit/e_unit/alu_e/ALUop" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUop[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUop[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p4test/uut/dp_unit/e_unit/IRE" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">IRE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IRE[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p4test/uut/dp_unit/w_unit/W_RF_A3_OUT" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">W_RF_A3_OUT[4:0]</obj_property>
+      <obj_property name="ObjectShortName">W_RF_A3_OUT[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p4test/uut/dp_unit/w_unit/W_RF_WD_OUT" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">W_RF_WD_OUT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">W_RF_WD_OUT[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p4test/uut/dp_unit/w_unit/IRW" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">IRW[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IRW[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p4test/uut/hz_unit/atdecoder/Instr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Instr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Instr[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p4test/uut/hz_unit/atdecoder/Instype" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Instype[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Instype[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p4test/uut/hz_unit/atdecoder/jal" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">jal</obj_property>
+      <obj_property name="ObjectShortName">jal</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p4test/uut/hz_unit/RSD" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RSD[4:0]</obj_property>
+      <obj_property name="ObjectShortName">RSD[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p4test/uut/hz_unit/RTD" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RTD[4:0]</obj_property>
+      <obj_property name="ObjectShortName">RTD[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p4test/uut/hz_unit/WRD" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">WRD[4:0]</obj_property>
+      <obj_property name="ObjectShortName">WRD[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p4test/uut/hz_unit/RSE" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RSE[4:0]</obj_property>
+      <obj_property name="ObjectShortName">RSE[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p4test/uut/hz_unit/RTE" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RTE[4:0]</obj_property>
+      <obj_property name="ObjectShortName">RTE[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p4test/uut/hz_unit/WRE" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">WRE[4:0]</obj_property>
+      <obj_property name="ObjectShortName">WRE[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p4test/uut/hz_unit/InstypeE" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">InstypeE[3:0]</obj_property>
+      <obj_property name="ObjectShortName">InstypeE[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p4test/uut/hz_unit/Forward_RS_D_src" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Forward_RS_D_src[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Forward_RS_D_src[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p4test/uut/hz_unit/Forward_RT_D_src" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Forward_RT_D_src[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Forward_RT_D_src[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p4test/uut/hz_unit/Forward_RS_E_src" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Forward_RS_E_src[1:0]</obj_property>
+      <obj_property name="ObjectShortName">Forward_RS_E_src[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p4test/uut/hz_unit/Forward_RT_E_src" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Forward_RT_E_src[1:0]</obj_property>
+      <obj_property name="ObjectShortName">Forward_RT_E_src[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p4test/uut/dp_unit/d_unit/forward_d/RT_D_OUT" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RT_D_OUT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RT_D_OUT[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p4test/uut/dp_unit/d_unit/PC4_forw_E" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PC4_forw_E[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC4_forw_E[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>
